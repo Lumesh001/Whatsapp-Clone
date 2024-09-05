@@ -11,6 +11,7 @@ import VectorIcon from './VectorIcon';
 import {useNavigation} from '@react-navigation/native';
 import ProgressBar from './ProgressBar';
 const FullModal = props => {
+  
   const {showStatusModal, setShowStatusModal, item, setTimeUp} = props;
   const updateModalStatus = () => {
     setShowStatusModal(prev => ({...prev, [item.id]: false}));
